@@ -1,0 +1,214 @@
+<!-- Popup Modal -->
+<div *ngIf="isOpen" class="fixed inset-0 flex items-center justify-center z-50 ">
+  <!-- Background overlay with blur -->
+  <div class="fixed inset-0 bg-gray-800 bg-opacity-50 "></div>
+  
+  <!-- Popup Content -->
+  <div class="bg-white shadow-lg z-10 w-5/6 h-5/6 relative flex flex-col">
+    <h2 class="text-xl font-normal bg-maincolor text-white pt-1 pb-1 pl-4 sticky top-0 z-10">Cập nhật thông tin tài sản</h2>
+    
+    <!-- Chỉ sử dụng overflow-y-auto ở đây -->
+    <div class="container mx-auto p-4 overflow-y-auto flex-1">
+      <div class="p-1 mb-2 bg-gray-200 pl-3 flex justify-between items-center">
+        <h2 class="font-bold">Thông tin chung</h2>
+        <div class="flex items-center pr-2">
+          <h2 class="font-normal mr-2">Tự động ghi tăng</h2>
+          <input type="checkbox" checked class="form-checkbox h-4 w-4 text-blue-600" />
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-4 divide-x-2 divide-gray-300">
+        <!-- Cột 1 -->
+        <div class="px-4">
+          <div class="mb-4">
+            <label for="loai-cong-trinh" class="block text-sm font-medium text-gray-700">Loại công trình <span class="text-red-500">(*)</span></label>
+            <select id="loai-cong-trinh" class="border border-gray-300 rounded-md p-2 w-full">
+              <option>Chọn...</option>
+            </select>
+          </div>
+  
+          <div class="mb-4">
+            <label for="cong-trinh" class="block text-sm font-medium text-gray-700">Công trình <span class="text-red-500">(*)</span></label>
+            <select id="cong-trinh" class="border border-gray-300 rounded-md p-2 w-full">
+              <option>Chọn...</option>
+            </select>
+          </div>
+  
+          <div class="mb-4">
+            <label for="cap-cong-trinh" class="block text-sm font-medium text-gray-700">Cấp công trình</label>
+            <select id="cap-cong-trinh" class="border border-gray-300 rounded-md p-2 w-full">
+              <option>Chọn...</option>
+            </select>
+          </div>
+  
+          <div class="mb-4">
+            <label for="loai-tai-san" class="block text-sm font-medium text-gray-700">Loại tài sản <span class="text-red-500">(*)</span></label>
+            <select id="loai-tai-san" class="border border-gray-300 rounded-md p-2 w-full">
+              <option>Tài sản giao quản lý, khai thác</option>
+            </select>
+          </div>
+  
+          <div class="mb-4">
+            <label for="he-thong-thuy-nong" class="block text-sm font-medium text-gray-700">Hệ thống thủy nông</label>
+            <div class="flex items-center space-x-2">
+              <select id="he-thong-thuy-nong" class="border border-gray-300 rounded-md p-2 w-full">
+                <option>Chọn...</option>
+              </select>
+              <button class="text-blue-500"><i class="fas fa-plus-circle"></i></button>
+            </div>
+          </div>
+  
+          <div class="mb-4">
+            <label for="ma-tai-san" class="block text-sm font-medium text-gray-700">Mã tài sản <span class="text-red-500">(*)</span></label>
+            <input type="text" id="ma-tai-san" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập mã tài sản">
+          </div>
+  
+          <div class="mb-4">
+            <label for="ma-dang-ky" class="block text-sm font-medium text-gray-700">Mã đăng ký</label>
+            <input type="text" id="ma-dang-ky" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập mã đăng ký">
+          </div>
+  
+          <div class="mb-4">
+            <label for="ten-tai-san" class="block text-sm font-medium text-gray-700">Tên tài sản <span class="text-red-500">(*)</span></label>
+            <input type="text" id="ten-tai-san" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập tên tài sản">
+          </div>
+        </div>
+  
+        <!-- Cột 2 -->
+        <div class="px-4">
+            <div class="mb-4">
+              <label for="tinh" class="block text-sm font-medium text-gray-700">Tỉnh</label>
+              <select id="tinh" class="border border-gray-300 rounded-md p-2 w-full">
+                <option>Chọn...</option>
+              </select>
+            </div>
+    
+            <div class="mb-4">
+              <label for="huyen" class="block text-sm font-medium text-gray-700">Huyện</label>
+              <select id="huyen" class="border border-gray-300 rounded-md p-2 w-full">
+                <option>Chọn...</option>
+              </select>
+            </div>
+    
+            <div class="mb-4">
+              <label for="xa" class="block text-sm font-medium text-gray-700">Xã</label>
+              <select id="xa" class="border border-gray-300 rounded-md p-2 w-full">
+                <option>Chọn...</option>
+              </select>
+            </div>
+  
+          <div class="mb-4">
+            <label for="tinh-trang" class="block text-sm font-medium text-gray-700">Tình trạng</label>
+            <select id="tinh-trang" class="border border-gray-300 rounded-md p-2 w-full">
+              <option>Đang sử dụng</option>
+            </select>
+          </div>
+  
+          <div class="mb-4">
+            <label for="bb-ban-giao" class="block text-sm font-medium text-gray-700">BB bàn giao, tiếp nhận</label>
+            <input type="text" id="bb-ban-giao" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập thông tin">
+          </div>
+        </div>
+  
+        <!-- Cột 3 -->
+        <div class="px-4">
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700">Năm xây dựng</label>
+            <div>
+              <p-calendar 
+                [(ngModel)]="namXayDung"
+                view="year"
+                dateFormat="yy"
+                [yearNavigator]="true"
+                yearRange="1950:2030"
+                [readonlyInput]="true"
+                inputId="nam-khai-thac"
+                [showIcon]="true" 
+              ></p-calendar>
+            </div>
+          </div>
+  
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700">Năm khai thác</label>
+            <div>
+              <p-calendar 
+                [(ngModel)]="namKhaiThac"
+                view="year"
+                dateFormat="yy"
+                [yearNavigator]="true"
+                yearRange="1950:2030"
+                [readonlyInput]="true"
+                inputId="nam-khai-thac"
+                [showIcon]="true" 
+              ></p-calendar>
+            </div>
+          </div>
+  
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700">Năm bàn giao</label>
+            <div>
+              <p-calendar 
+                [(ngModel)]="namBanGiao"
+                view="year"
+                dateFormat="yy"
+                [yearNavigator]="true"
+                yearRange="1950:2030"
+                [readonlyInput]="true"
+                inputId="nam-khai-thac"
+                [showIcon]="true" 
+              ></p-calendar>
+            </div>
+          </div>
+  
+          <div class="mb-4">
+            <label for="so-luong" class="block text-sm font-medium text-gray-700">Số lượng</label>
+            <input type="number" id="so-luong" class="border border-gray-300 rounded-md p-2 w-full" value="1">
+          </div>
+  
+          <div class="mb-4">
+            <label for="don-vi-tinh" class="block text-sm font-medium text-gray-700">Đơn vị tính</label>
+            <input type="text" id="don-vi-tinh" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập đơn vị tính">
+          </div>
+  
+          <div class="mb-4">
+            <label for="dien-tich-dat" class="block text-sm font-medium text-gray-700">Diện tích đất (m²)</label>
+            <input type="number" id="dien-tich-dat" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập diện tích đất">
+          </div>
+  
+          <div class="mb-4">
+            <label for="dien-tich-san" class="block text-sm font-medium text-gray-700">Diện tích sàn (m²)</label>
+            <input type="number" id="dien-tich-san" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập diện tích sàn">
+          </div>
+        </div>
+      </div>
+      <h2 class="text-lg font-bold mt-4 bg-gray-200 pt-1 pb-1 pl-3">Nguyên giá</h2>
+      <table class="min-w-full border border-gray-300 mt-2">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 p-2">Nguyên giá</th>
+            <th class="border border-gray-300 p-2">Giá trị</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 p-2">
+              <select class="border border-gray-300 rounded-md p-2 w-full">
+                <option>Chọn...</option>
+                <!-- Các tùy chọn khác -->
+              </select>
+            </td>
+            <td class="border border-gray-300 p-2">
+              <input type="text" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Nhập giá trị">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Nút Lưu và Đóng -->
+    <div class="flex justify-end bg-white p-2">
+      <button class="bg-blue-500 text-white px-4 py-1 mr-2">Lưu</button>
+      <button class="border border-blue-500 text-blue-500 px-4 py-1 mr-5" (click)="onClose()">Đóng</button>
+    </div>
+  </div>
+</div>

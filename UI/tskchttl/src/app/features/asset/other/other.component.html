@@ -1,0 +1,26 @@
+<div class="flex flex-col w-full">
+    <div class="flex items-center space-x-8 h-9 w-full bg-maincolor text-white">
+      <a (click)="selectMenuItem('Khai thác tài sản')" 
+         routerLink="asset-exploitation"
+         class="flex items-center cursor-pointer ml-5"
+         [ngClass]="{'text-white hover:text-yellow-300': getSelectedMenuItem() !== 'asset-exploitation', 'text-yellow-300': getSelectedMenuItem() === 'asset-exploitation'}">
+         Khai thác tài sản
+      </a>
+      <a (click)="selectMenuItem('Kế hoạch bảo trì tài sản')" 
+         routerLink="asset-maintenance-plan"
+         class="flex items-center cursor-pointer ml-5"
+         [ngClass]="{'text-white hover:text-yellow-300': getSelectedMenuItem() !== 'asset-maintenance-plan', 'text-yellow-300': getSelectedMenuItem() === 'asset-maintenance-plan'}">
+         Kế hoạch bảo trì tài sản
+      </a>
+      <a (click)="selectMenuItem('Xử lý tài sản')" 
+         routerLink="asset-handling"
+         class="flex items-center cursor-pointer ml-5"
+         [ngClass]="{'text-white hover:text-yellow-300': getSelectedMenuItem() !== 'asset-handling', 'text-yellow-300': getSelectedMenuItem() === 'asset-handling'}">
+         Xử lý tài sản
+      </a>
+    </div>
+    
+    <div class="p-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>

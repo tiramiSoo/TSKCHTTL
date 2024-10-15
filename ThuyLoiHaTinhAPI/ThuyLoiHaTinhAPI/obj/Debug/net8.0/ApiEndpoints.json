@@ -1,0 +1,156 @@
+[
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.DanhMucController",
+    "Method": "GetListDanhMuc",
+    "RelativePath": "api/DanhMuc/getListDanhMuc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.DanhMucController",
+    "Method": "GetListKhauHao",
+    "RelativePath": "api/DanhMuc/getListKhauHao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.LoginController",
+    "Method": "Authenticate",
+    "RelativePath": "api/Login/authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "ThuyLoiHaTinhAPI.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.LoginController",
+    "Method": "CheckTaiKhoan",
+    "RelativePath": "api/Login/checktaikhoan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "ThuyLoiHaTinhAPI.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.LoginController",
+    "Method": "SendResetPasswordEmail",
+    "RelativePath": "api/Login/send-reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.Text.Json.Nodes.JsonObject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.QuanHuyenXaController",
+    "Method": "GetAllProvinces",
+    "RelativePath": "api/QuanHuyenXa/getAllProvinces",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.TaiSanController",
+    "Method": "GetFilterCapCT",
+    "RelativePath": "api/TaiSan/getFilterCapCT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.TaiSanController",
+    "Method": "GetFilterCT",
+    "RelativePath": "api/TaiSan/getFilterCT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.TaiSanController",
+    "Method": "GetFilterHTTN",
+    "RelativePath": "api/TaiSan/getFilterHTTN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.TaiSanController",
+    "Method": "GetFilterLoaiCT",
+    "RelativePath": "api/TaiSan/getFilterLoaiCT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.TaiSanController",
+    "Method": "GetFilterLoaiTaiSan",
+    "RelativePath": "api/TaiSan/getFilterLoaiTaiSan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.TaiSanController",
+    "Method": "GetFilterLocation",
+    "RelativePath": "api/TaiSan/getFilterLocation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThuyLoiHaTinhAPI.Controllers.TaiSanController",
+    "Method": "GetTableQLTS",
+    "RelativePath": "api/TaiSan/getTableQLTS",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TableQLTSRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

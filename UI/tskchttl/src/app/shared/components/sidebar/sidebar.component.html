@@ -1,0 +1,332 @@
+<aside [ngClass]="{'translate-x-0': isSidebarOpen, '-translate-x-full': !isSidebarOpen}" class="bg-maincolor text-white w-72 min-h-screen h-full top-0 left-0 bottom-0 overflow-y-auto transition-transform duration-500 ease-in-out z-30">
+  <h2 class="py-2 px-4 bg-maincolor-darkblue">{{ getMenuTitle() }}</h2>
+  
+  <!-- Sidebar content for 'TÀI SẢN' -->
+  <div *ngIf="currentUrl.startsWith('/asset')" class="font-normal text-l">
+    <button type="button" 
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer" 
+        (click)="toggleDropdown('asset'); navigateTo($event,'/asset')">
+        <i class="fas fa-building mr-1 text-xl"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Tài sản</span>
+        <svg class="w-3 h-3" [ngClass]="{'rotate': isDropdownOpen('data-entry')}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+    </button>
+    <ul *ngIf="isDropdownOpen('asset')" class="py-2 space-y-2 bg-maincolor">
+      <li>
+        <button type="button" 
+            [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/main-construction')}"
+            class="flex items-center w-full p-2 text-white transition duration-75 pl-10 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer"
+            (click)="toggleNestedDropdown('main-construction', 'initial-balance'); navigateTo($event,'/asset/main-construction')">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span class="flex-1 text-left rtl:text-right whitespace-nowrap">Công trình chính</span>
+          <svg class="w-3 h-3" [ngClass]="{'rotate-0': isNestedDropdownOpen('main-construction', 'initial-balance')}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+        </button>
+        <ul *ngIf="isNestedDropdownOpen('main-construction', 'initial-balance')" class="py-2 space-y-2 pl-10 bg-maincolor">
+          <li>
+            <a routerLink="/asset/main-construction/reservoir" (click)="navigateTo($event, '/asset/main-construction/reservoir')" 
+              [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/main-construction/reservoir')}"
+              class="flex items-center w-full p-2 text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+              <i class="fas fa-caret-right mr-2 text-xl"></i>
+              <span>Hồ chứa nước</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/asset/main-construction/pump-station" (click)="navigateTo($event, '/asset/main-construction/pump-station')"
+            [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/main-construction/pump-station')}"
+            class="flex items-center w-full p-2 text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+              <i class="fas fa-caret-right mr-2 text-xl"></i>
+              <span>Trạm bơm</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/asset/main-construction/drain" (click)="navigateTo($event, '/asset/main-construction/drain')"
+              [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/main-construction/drain')}"
+              class="flex items-center w-full p-2 text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+              <i class="fas fa-caret-right mr-2 text-xl"></i>
+              <span>Cống</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/asset/main-construction/canals" (click)="navigateTo($event, '/asset/main-construction/canals')"
+              [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/main-construction/canals')}"
+              class="flex items-center w-full p-2 text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+              <i class="fas fa-caret-right mr-2 text-xl"></i>
+              <span>Kênh mương</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" 
+          class="flex items-center w-full p-2 text-white transition duration-75 pl-10 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer"
+          (click)="toggleNestedDropdown('sub-construction', 'initial-balance'); navigateTo($event, '/asset/sub-construction')">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span class="flex-1 text-left rtl:text-right whitespace-nowrap">Công trình phụ trợ</span>
+          <svg class="w-3 h-3" [ngClass]="{'rotate-0': isNestedDropdownOpen('sub-construction', 'initial-balance')}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+        </button>
+        <ul *ngIf="isNestedDropdownOpen('sub-construction', 'initial-balance')" class="py-2 space-y-2 pl-10 bg-maincolor">
+          <li>
+            <a [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/sub-construction')}"
+              routerLink="/asset/sub-construction" (click)="navigateTo($event, '/asset/sub-construction')"
+              class="flex items-center w-full p-2 text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+              <i class="fas fa-caret-right mr-2 text-xl"></i>
+              <span>Nhà, trạm, đường quản lý</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <button type="button" 
+        routerLink="/asset/increase" (click)="navigateTo($event, '/asset/increase')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/increase')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-plus mr-1 text-xl"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Ghi tăng</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/change-asset-information" (click)="navigateTo($event, '/asset/change-asset-information')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/change-asset-information')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-edit mr-1 text-l"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Thay đổi thông tin</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/deduct-depreciation" (click)="navigateTo($event, '/asset/deduct-depreciation')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/deduct-depreciation')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-chart-line mr-1 text-l"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Trích khấu hao</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/re-assess" (click)="navigateTo($event, '/asset/re-assess')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/re-assess')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-sync-alt mr-1 text-l"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Đánh giá lại</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/transfer" (click)="navigateTo($event, '/asset/transfer')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/transfer')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-arrows-alt mr-1 text-l"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Điều chuyển</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/decrease" (click)="navigateTo($event, '/asset/decrease')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/decrease')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-minus mr-1 text-xl"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Ghi giảm</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/depreciation" (click)="navigateTo($event, '/asset/depreciation')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/depreciation')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-calculator mr-1 text-xl"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Tính hao mòn</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/inventory" (click)="navigateTo($event, '/asset/inventory')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/inventory')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-clipboard-list mr-1 text-xl"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Kiểm kê</span>
+      </button>
+      <button type="button" 
+        routerLink="/asset/other" (click)="navigateTo($event, '/asset/other')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/asset/other')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-ellipsis-h mr-1 text-xl"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Khác</span>
+      </button>
+  </div>
+  
+  <!-- Sidebar content for 'HỆ THỐNG' -->
+  <div *ngIf="currentUrl.startsWith('/system')" class="font-normal text-l">
+    <button type="button" 
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer" 
+        (click)="toggleDropdown('system')">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Quản lý người dùng đơn vị</span>
+        <svg class="w-3 h-3" [ngClass]="{'rotate': isDropdownOpen('system')}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+    </button>
+    <ul *ngIf="isDropdownOpen('system')" class="space-y-2 bg-maincolor border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+      <li>
+        <a routerLink="/system/users" (click)="navigateTo($event, '/system/users')"
+         class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Người dùng</span>
+        </a>
+      </li>
+    </ul>
+
+    <button type="button" 
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Thiết lập tham số báo cáo</span>
+    </button>
+  </div>
+
+  <!-- Sidebar content for 'DANH MỤC' -->
+  <div *ngIf="currentUrl.startsWith('/category')" class="font-normal text-l">
+    <button type="button" 
+        routerLink="/category/funding-source" (click)="navigateTo($event, '/category/funding-source')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/category/funding-source')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Nguồn kinh phí</span>
+    </button>
+
+    <button type="button" 
+        routerLink="/category/depreciation-category" (click)="navigateTo($event, '/category/depreciation-category')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/category/depreciation-category')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Khấu hao, hao mòn tài sản</span>
+    </button>
+
+    <button type="button" 
+        routerLink="/category/report-type" (click)="navigateTo($event, '/category/report-type')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/category/report-type')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Loại báo cáo</span>
+    </button>
+
+    <button type="button" 
+        routerLink="/category/list-irrigation-system" (click)="navigateTo($event, '/category/list-irrigation-system')"
+        [ngClass]="{'bg-maincolor-hover': isItemSelected('/category/list-irrigation-system')}"
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Danh sách Hệ thống thuỷ nông</span>
+    </button>
+  </div>
+
+  
+
+  <!-- Sidebar content for 'BÁO CÁO' -->
+  <div *ngIf="currentUrl.startsWith('/report')" class="font-normal text-l">
+    <button type="button" 
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer" 
+        (click)="toggleDropdown('report-1')">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Báo cáo tài sản công</span>
+        <svg class="w-3 h-3" [ngClass]="{'rotate': isDropdownOpen('report')}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+    </button>
+    <ul *ngIf="isDropdownOpen('report-1')" class="py-2 space-y-2 bg-maincolor">
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo công khai</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo tra cứu</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo chi tiết</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo tổng hợp</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo kê khai</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo theo chế độ kế toán</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo theo tài chính nhà nước</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Kết quả đăng ký</span>
+        </a>
+      </li>
+    </ul>
+    
+    <button type="button" 
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Báo cáo tài sản xác lập</span>
+    </button>
+
+    <button type="button" 
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Báo cáo tài sản dự án</span>
+    </button>
+
+    <button type="button" 
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Báo cáo công cụ, dụng cụ</span>
+    </button>
+    
+    <button type="button" 
+        class="flex items-center w-full p-2 text-base text-white transition duration-75 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer" 
+        (click)="toggleDropdown('report-2')">
+        <i class="fas fa-genderless mr-1 text-xs"></i>
+        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Báo cáo theo quy định cũ</span>
+        <svg class="w-3 h-3" [ngClass]="{'rotate': isDropdownOpen('report')}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+    </button>
+    <ul *ngIf="isDropdownOpen('report-2')" class="py-2 space-y-2 bg-maincolor">
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo công khai</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo kê khai</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Báo cáo theo chế độ kế toán</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 pl-5 group hover:bg-maincolor-hover dark:text-white border-l-4 border-transparent hover:border-red-500 cursor-pointer">
+          <i class="fas fa-genderless mr-2 text-xs"></i>
+          <span>Phiếu xác nhận thông tin</span>
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+</aside>

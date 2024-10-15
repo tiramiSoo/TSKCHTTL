@@ -1,0 +1,13 @@
+:host{
+    ::ng-deep .p-inputtext .p-button {
+        width: 70px;
+    }
+    ::ng-deep .p-inputtext {
+        width: 70px;
+        height: 20px;
+    }  
+    ::ng-deep .p-button {
+        height: 20px;
+        background-color: #2673b4;
+    }  
+}

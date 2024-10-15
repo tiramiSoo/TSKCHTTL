@@ -1,0 +1,284 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\repository\\taisanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\repository\\taisanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\service\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\service\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\service\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\service\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\models\\sys_coquan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\models\\sys_coquan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\service\\taisanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\service\\taisanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\models\\sys_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\models\\sys_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\context\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\context\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\repository\\itaisanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\repository\\itaisanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\models\\taisan_congtrinhrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\models\\taisan_congtrinhrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|d:\\congviec\\tskchttl\\thuyloihatinhapi\\thuyloihatinhapi\\models\\taisan_congtrinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55705D88-8FFE-4AC8-89FF-E82C64CBBA28}|ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI.csproj|solutionrelative:thuyloihatinhapi\\models\\taisan_congtrinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Dto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Dto\\LoginDto.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Dto\\LoginDto.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Dto\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T07:38:40.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Models\\LoginRequest.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T03:18:05.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T02:52:33.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Service\\LoginService.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Service\\LoginService.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Service\\LoginService.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Service\\LoginService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAgwH0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T01:24:41.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Service\\ILoginService.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Service\\ILoginService.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Service\\ILoginService.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Service\\ILoginService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADgvwkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T01:24:30.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Program.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Program.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:02:32.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaiSanRepository.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Repository\\TaiSanRepository.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Repository\\TaiSanRepository.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Repository\\TaiSanRepository.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Repository\\TaiSanRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA3wBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:57:45.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sys_coquan.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\sys_coquan.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Models\\sys_coquan.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\sys_coquan.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Models\\sys_coquan.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAxwA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T07:55:20.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaiSanService.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Service\\TaiSanService.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Service\\TaiSanService.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Service\\TaiSanService.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Service\\TaiSanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T06:58:50.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "sys_member.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\sys_member.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Models\\sys_member.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\sys_member.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Models\\sys_member.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA0wBcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T04:10:12.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\appsettings.json",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\appsettings.json",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-10T03:25:55.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DapperContext.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Context\\DapperContext.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Context\\DapperContext.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Context\\DapperContext.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Context\\DapperContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T06:56:46.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "taisan_congtrinhRequest.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\taisan_congtrinhRequest.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Models\\taisan_congtrinhRequest.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\taisan_congtrinhRequest.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Models\\taisan_congtrinhRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T03:33:39.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITaiSanRepository.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Repository\\ITaiSanRepository.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Repository\\ITaiSanRepository.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Repository\\ITaiSanRepository.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Repository\\ITaiSanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T03:30:41.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Repository\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Repository\\IGenericRepository.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Repository\\IGenericRepository.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Repository\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T09:34:56.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "taisan_congtrinh.cs",
+              "DocumentMoniker": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\taisan_congtrinh.cs",
+              "RelativeDocumentMoniker": "ThuyLoiHaTinhAPI\\Models\\taisan_congtrinh.cs",
+              "ToolTip": "D:\\CongViec\\TSKCHTTL\\ThuyLoiHaTinhAPI\\ThuyLoiHaTinhAPI\\Models\\taisan_congtrinh.cs",
+              "RelativeToolTip": "ThuyLoiHaTinhAPI\\Models\\taisan_congtrinh.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T07:27:38.984Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

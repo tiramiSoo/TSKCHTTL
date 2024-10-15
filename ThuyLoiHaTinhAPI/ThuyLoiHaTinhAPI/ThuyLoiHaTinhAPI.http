@@ -1,0 +1,6 @@
+@ThuyLoiHaTinhAPI_HostAddress = http://localhost:5058
+
+GET {{ThuyLoiHaTinhAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
